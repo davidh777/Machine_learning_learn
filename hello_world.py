@@ -14,7 +14,7 @@ data = keras.datasets.fashion_mnist
 (train_images, train_labels), (test_images, test_labels) = data.load_data()
 best = 0
 
-class_names = ['T-Shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
+class_names = ['T-Shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot'] # Different classifcations
 (train_images, train_labels), (test_images, test_labels) = data.load_data()
 
 train_images = train_images/255.0
