@@ -9,11 +9,9 @@ data = tf.keras.datasets.mnist
 
 (x_train,y_train), (x_test, y_test) = data.load_data() # This sets up both the trianing data and the testing data as the network will attept to the fit the x_train to the y_train
 
-
-
 x = np.concatenate((x_train,x_test), axis=0)
 y = np.concatenate((y_train,y_test), axis=0)
-print(y.max())
+
 y0 = np.zeros((len(y),10))
 for i in range(len(y)):
     h = y[i]
